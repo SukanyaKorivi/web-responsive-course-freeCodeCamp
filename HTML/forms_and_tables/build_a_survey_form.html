@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>Survey Form</title>
+</head>
+
+<body>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+   <p> <label id="name-label">Name
+        <input required id="name" type="text" placeholder="enter your name">
+    </label>
+   </p>
+
+    <p><label id="email-label">Email
+        <input required id="email" type="email" placeholder="enter your email">
+    </label></p>
+
+   <p> <label id="number-label">Age (optional)
+        <input id="number" type="number" placeholder="enter your age" min="0" max="100">
+    </label>
+   </p>
+    <p>
+    <label>Which option best describes your current role?</label>
+    <select id="dropdown">
+        <option value="student">student</option>
+        <option value="full time" > full time work</option>
+        <option value="learning"> full time learner</option>
+        <option value="prefer not to say"> prefer not to say</option>
+    </select>
+    </p>
+    <p>
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <input type="radio"  value="definitely" id="definitely" name="choice">
+    <label for="definitely" >Definitely</label>
+
+    <input type="radio" id="maybe" name="choice" value="may be">
+    <label for="maybe">May be</label>
+
+    <input type="radio" id="choice" name="choice" value="not sure">
+    <label for="choice">Not sure</label>
+    </p>
+    <p>
+    <label >What is your favorite feature of freeCodeCamp?</label>
+    <select id="choose">
+        <option selected>choose an optio</option>
+        <option>challenges</option>
+        <option>projects</option>
+        <option>community</option>
+    </select>
+    </p>
+    <label>What would you like to see improved? (Check all that apply)</label>
+    <p><input type="checkbox" id="frontend" name="frontend" value="frontend">
+    <label for="frontend">Front-end Projects</label>
+
+    <input type="checkbox" id="backend" name="backend" value="backend">
+    <label for="backend">Back-end Projects</label>
+
+    <input type="checkbox" id="data-visualization" name="data visualization" value="data visualization">
+    <label for="data-visualization">Data Visualization Projects</label>
+    </p>
+
+    <label for="comment"> any comments here </label>
+    <p>  <textarea  id="comment"  name="comments" placeholder="type here.." rows="10" cols="50"></textarea>
+
+</p>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>
